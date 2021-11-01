@@ -4,7 +4,7 @@ import "./Services.css";
 const Services = () => {
   const [places, setPlaces] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:4000/Tourist-Places")
+    fetch("https://shocking-dungeon-19775.herokuapp.com/Tourist-Places")
       .then((res) => res.json())
       .then((data) => setPlaces(data));
   }, []);

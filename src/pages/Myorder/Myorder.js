@@ -7,12 +7,12 @@ const Myorder = () => {
   const [myorder, setMyorder] = useState([]);
   const [isDelete, setIsDelete] = useState(null)
   useEffect(() => {
-    fetch(`http://localhost:4000/bookingPlace`)
+    fetch(`https://shocking-dungeon-19775.herokuapp.com/bookingPlace`)
       .then((res) => res.json())
       .then((data) => setMyorder(data));
   }, [isDelete]);
   const handleDelete =(id) =>{
-fetch(`http://localhost:4000/deleteOrder/${id}`, {
+fetch(`https://shocking-dungeon-19775.herokuapp.com/deleteOrder/${id}`, {
     method: 'DELETE',
     headers: {'content-type': 'application/json'},
 })

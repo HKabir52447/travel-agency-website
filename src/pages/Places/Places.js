@@ -10,7 +10,7 @@ const Places = (props) => {
 
   const [booking, setBooking] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:4000/Tourist-Places")
+    fetch("https://shocking-dungeon-19775.herokuapp.com/Tourist-Places")
       .then((res) => res.json())
       .then((data) => setBooking(data));
   }, []);
@@ -18,7 +18,7 @@ const Places = (props) => {
     const data = booking[index];
     data.email = `${user.email}`;
     
-    fetch("http://localhost:4000/bookingPlace", {
+    fetch("https://shocking-dungeon-19775.herokuapp.com/bookingPlace", {
     method: "POST",
     headers:{"content-type": "application/json"},
     body: JSON.stringify(data)  
