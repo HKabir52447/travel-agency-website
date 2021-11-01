@@ -1,0 +1,17 @@
+.menu-link {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.3rem 1.1rem;
+    font-size: 1.2rem;
+    color: #192a56;
+    font-weight: 500;
+    margin-right: 4px;
+  }
+  .menu-link:hover {
+    background: #e10f28;
+    color: #fff;
+    border-radius: 5px;
+  }
+  a{
+      text-decoration: none;
+  }

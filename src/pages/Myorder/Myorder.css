@@ -1,0 +1,19 @@
+.order-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.order{
+    padding: 1.5rem;
+    border: 1px solid rgba(128, 128, 128, 0.281);
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+    background: #fff;
+}
+
+@media screen and (max-width:768px) {
+    .order-container{
+        grid-template-columns: 1fr;
+    }
+  }
